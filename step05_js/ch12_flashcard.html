@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <script src = "./js/main2.js"></script>
+</head>
+
+<body>
+    <center>
+    
+        <h1 id = "demo">
+        <script>
+            var num1 = Math.floor(Math.random() * 9) + 1;
+            var num2 = Math.floor(Math.random() * 9) + 1 ;
+            var CAnswer = num1 + num2;
+            console.log(CAnswer);
+
+            document.write(num1 + "+" + num2);
+        </script>
+        </h1>
+        
+
+        <p>답변을 입력하세요:</p>
+        <input id = "answer">
+        <button type="button" onclick="Q()">제출</button>
+        <button type="button" onclick="Q2()">새로운 문제</button>
+        <p id="output"></p>
+        <p id="sol"></p>
+    </center>
+</body>
+</html>
